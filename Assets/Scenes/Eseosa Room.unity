@@ -4704,6 +4704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tennis Ball
       objectReference: {fileID: 0}
+    - target: {fileID: -1695656799983992288, guid: d0c00082fbae52742bbd03cc0bccf5ea, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: e654b37fdb1572b448b120296457ac63, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4740,7 +4744,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &7310224406000000005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4753,6 +4757,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_MovementType: 1
+  m_SmoothPosition: 1
+  m_SmoothRotation: 1
 --- !u!1 &7310224406000000006
 GameObject:
   m_ObjectHideFlags: 0
