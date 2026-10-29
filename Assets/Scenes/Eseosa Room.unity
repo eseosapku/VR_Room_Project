@@ -4770,6 +4770,8 @@ MonoBehaviour:
   m_MovementType: 1
   m_SmoothPosition: 1
   m_SmoothRotation: 1
+  m_InteractionLayers:
+    m_Bits: 1
 --- !u!1 &7310224406000000006
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,6 +4958,8 @@ MonoBehaviour:
   m_AttachTransform: {fileID: 7310224408000000007}
   m_SmoothPosition: 1
   m_SmoothRotation: 1
+  m_InteractionLayers:
+    m_Bits: 1
 --- !u!1 &7310224408000000006
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,6 +5220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SmoothPosition: 1
   m_SmoothRotation: 1
+  m_InteractionLayers:
+    m_Bits: 2
 --- !u!1001 &7310224410000000006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5307,6 +5313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SmoothPosition: 1
   m_SmoothRotation: 1
+  m_InteractionLayers:
+    m_Bits: 2
 --- !u!1 &7310224411000000001
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,6 +5384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttachTransform: {fileID: 7310224411000000006}
   m_StartingSelectedInteractable: {fileID: 7310224410000000005}
+  m_InteractionLayers:
+    m_Bits: 2
 --- !u!1 &7310224411000000005
 GameObject:
   m_ObjectHideFlags: 0
@@ -5476,6 +5486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttachTransform: {fileID: 7310224411000000012}
   m_StartingSelectedInteractable: {fileID: 7310224410000000010}
+  m_InteractionLayers:
+    m_Bits: 2
 --- !u!1 &7310224411000000011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5576,6 +5588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttachTransform: {fileID: 7310224411000000018}
   m_StartingSelectedInteractable: {fileID: 0}
+  m_InteractionLayers:
+    m_Bits: 2
 --- !u!1 &7310224411000000017
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,6 +5687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_InteractionLayers:
+    m_Bits: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
