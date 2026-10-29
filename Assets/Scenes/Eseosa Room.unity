@@ -4262,6 +4262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TeleportationProvider: {fileID: 7310224403000000014}
+  m_CustomReticle: {fileID: 3521457681945940986, guid: 493691fe396bc5c40900e8a234c5c60e, type: 3}
 --- !u!1 &7310224404000000002
 GameObject:
   m_ObjectHideFlags: 0

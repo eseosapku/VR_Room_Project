@@ -366,3 +366,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MatchOrientation: 2
   m_TeleportAnchorTransform: {fileID: 8353111857174739667}
+  m_CustomReticle: {fileID: 8656087483511947524, guid: 50f8d835961353c4a8e0c4b77d7f8876, type: 3}
