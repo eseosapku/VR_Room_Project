@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Box
+  - Landfill
+  - Recycle
+  - Ewaste
+  - Compost
+  - Flame
+  - Trail
   layers:
   - Default
   - TransparentFX
@@ -14,8 +21,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Raycast
+  - Test
   - 
   - 
   - 
@@ -38,6 +45,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI
+    uniqueID: 3401568087
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
