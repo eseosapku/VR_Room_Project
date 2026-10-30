@@ -6,6 +6,10 @@ TextureImporter:
     enableMipMap: 1
   textureType: 0
   maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 8
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 3967941220153992172}
   - component: {fileID: 1171465149692303035}
   - component: {fileID: 5573111313371834963}
+  - component: {fileID: 7310224423000000002}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7512,6 +7513,7 @@ Transform:
   - {fileID: 7310224419000000102}
   - {fileID: 7310224421000000102}
   - {fileID: 7310224421000000204}
+  - {fileID: 7310224422000000002}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7310224419000000003
@@ -11738,6 +11740,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nearFarInteractor: {fileID: 7310224418000000004}
+--- !u!1001 &7310224422000000001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7310224419000000002}
+    m_Modifications:
+    - target: {fileID: 85097727426779475, guid: 523386755330448b19a21a0dfa93a499, type: 3}
+      propertyPath: m_Name
+      value: FPS Overlay UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 85097727426779472, guid: 523386755330448b19a21a0dfa93a499, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2435125054861409734}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 523386755330448b19a21a0dfa93a499, type: 3}
+--- !u!224 &7310224422000000002 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 85097727426779487, guid: 523386755330448b19a21a0dfa93a499, type: 3}
+  m_PrefabInstance: {fileID: 7310224422000000001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7310224423000000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451074008507554059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 5cea965eeca64bafa254c1e70f353c9d, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
