@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Eseosa Room.unity
     guid: 27db7de597d97c24fb816fd22b8ecb07
+  - enabled: 1
+    path: Assets/Scenes/VR Room.unity
+    guid: 5031b674cf2778d44917a0261dabcb87
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 252bea5c0aac647f381f7ac71f9619c7, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 30b1e90f667fda34192c5a5f34fda1c6, type: 2}
