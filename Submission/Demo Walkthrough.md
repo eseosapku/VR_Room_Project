@@ -33,20 +33,24 @@ This is the order I follow when I record the demo video and when I present. Each
 1. **Start.** The room fades in, I stand on the Start Mat and the welcome panel tells me what to do. I poke Start with my fingertip to show touch input.
 2. **Locomotion.** I teleport across the main room floor and into the storage room.
 3. **Grabbing.** I pick up the mug, a small box and the origami crane, and throw a box.
-4. **Physics door.** I walk to the glass door, grip the handle and slowly pull the door open, showing it follows my hand. I let go and it swings gently shut. I open it the other way by pushing from the other side.
-5. **Sockets.** I put a chess piece on the board square, then try the mug there to show it is refused. I take the flashlight out of its dock, show a chess piece will not fit the dock, and put the flashlight back.
+4. **Physics door.** I walk up to the glass door until the handle on my side shows its tooltip. I squeeze and hold grip on that handle and slowly walk backwards or sweep my arm to pull the door open, showing it follows my hand the whole time. I keep holding and push it back until it is shut, then let go. I go through, use the handle on the other face and push the door open the other way. If I let go while it is open, the hinge spring swings it gently closed.
+5. **Sockets.** At the chess table I pick up any chess piece from the board (they are all grabbable) and place it on the glowing teal square. It snaps upright. I bring the mug to the same square to show it is refused. In the storage room I take the flashlight out of its glowing dock, show a chess piece will not fit the dock, and put the flashlight back.
 6. **Room menu.** I press B: I return to the Start Mat and the Room Menu opens. I press Reset Room to show every object returns to where it started.
 7. **Travel back.** I press B, then Eseosa's Room, to show navigation works in both directions without restarting. I grab something there to prove the hands and interactions still work after the switch.
 
-## The door handle
+## The door handles
 
-The door has one handle that passes through the glass, so it can be grabbed from either side. Grab whichever side is facing me. There is no button to press. I hold grip and move my hand, and the door follows. When I let go, a gentle spring in the hinge pulls the door back to closed.
+The door has two handles, one on each face of the glass (Front Handle and Back Handle). I use whichever one is on my side. There is no button to press and nothing to push down. I hold grip and move my hand, and the door follows. To close it I keep holding and push or pull it back to the frame, or I simply let go and the hinge spring swings it shut.
+
+## Tooltips and signs
+
+Hovering a hand or ray over the ball, racket, remote, hats, door handles, flashlight or the four loose chess pieces shows a short instruction above it. The hat hook, the chess square and the flashlight dock have signs that are always visible, and the chess square and dock glow teal so it is obvious where things go.
 
 ## What I explain while presenting
 
 1. **Scene setup.** Each scene has the same top level groups (XR, LIGHTING, STATIC, DYNAMIC, INTERFACE). Both scenes use one XR Rig prefab, so the controls are identical.
 2. **Interaction components.** XR Grab Interactable for grabbing, XR Socket Interactor for sockets, Near Far Interactor and Poke Interactor for hands and UI, XR Ray Interactor for teleporting, Tracked Device Graphic Raycaster on every canvas.
-3. **Door.** The door leaf has a Rigidbody and a Hinge Joint around its vertical edge with limits of 100 degrees each way and a light closing spring. The handle has its own Rigidbody, a Fixed Joint to the door and an XR Grab Interactable set to Velocity Tracking, so my hand pushes the door with physics instead of moving it directly. The door is on its own physics layer so it never catches on its own frame.
+3. **Door.** The door leaf has a Rigidbody and a Hinge Joint around its vertical edge with limits of 100 degrees each way and a light closing spring. Each of the two handles has its own Rigidbody, a Fixed Joint to the door and an XR Grab Interactable set to Velocity Tracking, so my hand pushes the door with physics instead of moving it directly. The door and its handles are on their own Door physics layer, which ignores the Door Frame layer so the door never catches on its frame, and the hand casters include the Door layer so the handles can still be grabbed.
 4. **Socket matching.** A socket only accepts objects that share one of its Interaction Layers. The hook and head sockets use Hats, the board uses Chess and the dock uses Flashlight. Everything I can pick up also has Default so my hands can still grab it.
 5. **Wall clock.** ClockTicker reads DateTime.Now every frame and raises a Ticked event. AnalogClockListener turns the second hand 6 degrees per second, the minute hand 6 degrees per minute and the hour hand 30 degrees per hour. DigitalClockListener rewrites the text once a second.
 6. **Animated hands.** ControllerInputReader reads the grip and trigger values and raises GripChanged and TriggerChanged. HandAnimationListener passes them to the Animator, whose 2D blend tree mixes the Open, Grip, Trigger and Fist poses.
